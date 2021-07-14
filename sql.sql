@@ -41,13 +41,14 @@ CREATE TABLE `posts` (
   PRIMARY KEY (`ID`)
 );
 
--- -- -- MISC -- -- --
 -- Insert values to be able to log in
 insert into login_form (firstname,lastname,role,email,password) values ('admin','lastname','admin','admin@hostname',md5('password'));
 
 -- Create site_prefs table
 create table `site_prefs` (`id` int(11) not null auto_increment, `maintenance` varchar(15), primary key (`id`));
 INSERT INTO site_prefs (maintenance) VALUES ('1');
+
+-- -- -- MISC -- -- --
 
 -- Add column
 alter table login_form add column newcol varchar(15) after last_loggedin;
