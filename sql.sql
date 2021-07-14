@@ -1,3 +1,4 @@
+-- -- -- Part 1 / Part 2 -- -- --
 
 -- Login to MYSQ as root user and issue these commands
 create user 'user'@'localhost' IDENTIFIED BY 'password';
@@ -25,6 +26,19 @@ CREATE TABLE `login_form` (
   `last_loggedin` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
+);
+
+-- -- -- Part 3 -- -- --
+
+-- Create posts table
+CREATE TABLE `posts` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `postname` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `last_updated` varchar(255) DEFAULT NULL,
+  `post` longtext NOT NULL,
+  PRIMARY KEY (`ID`)
 );
 
 -- Insert values to be able to log in
