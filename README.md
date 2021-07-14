@@ -1,3 +1,3 @@
 # Simple-CMS-project-files
 
-This is jsut to store notes and extra files used in the Simple-CMS series.
+This is just to store notes and extra files used in the Simple-CMS series.
