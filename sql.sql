@@ -41,6 +41,7 @@ CREATE TABLE `posts` (
   PRIMARY KEY (`ID`)
 );
 
+-- -- -- MISC -- -- --
 -- Insert values to be able to log in
 insert into login_form (firstname,lastname,role,email,password) values ('admin','lastname','admin','admin@hostname',md5('password'));
 
