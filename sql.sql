@@ -39,13 +39,13 @@ INSERT INTO site_prefs (maintenance) VALUES ('1');
 
 -- Create posts table
 CREATE TABLE `posts` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `postname` varchar(255) NOT NULL,
   `subject` varchar(255) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `last_updated` varchar(255) DEFAULT NULL,
   `post` longtext NOT NULL,
-  PRIMARY KEY (`ID`)
+  PRIMARY KEY (`id`)
 );
 
 -- -- -- MISC -- -- --
