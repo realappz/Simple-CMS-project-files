@@ -12,7 +12,7 @@ mysql -u user -ppassword
 create database mydatabasename_newdatabase;
 
 -- Switch to database created
-use use mydatabasename_newdatabase;
+use mydatabasename_newdatabase;
 
 -- Create the table 
 CREATE TABLE `login_form` (
